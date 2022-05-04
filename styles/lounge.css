@@ -1,0 +1,45 @@
+.lounge__title {
+  padding-bottom: 60px;
+}
+
+.lounge__list {
+  font-size: 0;
+}
+
+.lounge__item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 20px;
+  width: 580px;
+  height: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.lounge__figure {
+  width: 100%;
+  height: 350px;
+  text-align: center;
+}
+
+.lounge__item:nth-child(2n+1) {
+  margin-right: 20px;
+}
+
+.lounge__item:nth-last-child(-n+2) {
+  margin-bottom: 0;
+}
+
+.lounge__caption {
+  margin-top: -40%;
+  max-width: 100%;
+  text-align: center;
+}
+
+
+

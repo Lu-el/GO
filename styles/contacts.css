@@ -1,0 +1,24 @@
+.contacts__point {
+  padding-left: 60px;
+  background-color: transparent;
+  background-position: left;
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+}
+
+.contacts__point_street {
+  background-image: url('../image/contacts/location.svg');
+  margin-bottom: 38px;
+}
+
+.contacts__content_bottom {
+  margin-bottom: 11px;
+}
+
+.contacts__point_tel {
+  background-image: url('../image/contacts/phone-call.svg');
+}
+
+.contacts__point_mail {
+  background-image: url('../image/contacts/email.svg');
+}

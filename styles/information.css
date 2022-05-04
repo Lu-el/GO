@@ -1,0 +1,38 @@
+.information__container {
+  font-size: 0;
+}
+
+.information__title {
+  padding-bottom: 50px;
+}
+
+/* .information__gallery {
+  margin-right: 80px;
+  max-width: 600px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+} */
+
+.information__wrapper {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+.information__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.information__text:not(:nth-last-child(2)) {
+  margin-bottom: 26px;
+}
+
+.information__quote {
+  margin-top: 59px;
+}
+
+

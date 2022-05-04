@@ -1,0 +1,55 @@
+.review__container {
+  padding: 0 127px 0 133px;
+}
+
+.review__title {
+  padding-bottom: 40px;
+}
+
+.review__content {
+  font-size: 0;
+}
+
+.review__content:not(:last-child) {
+  margin-bottom: 52px;
+}
+
+.review__figure {
+  display: inline-block;
+  vertical-align: top;
+  width: 280px;
+  margin-right: 20px;
+}
+
+.review__avatar {
+  margin-bottom: 11px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%/50%;
+  object-position: top;
+  object-fit: cover;
+}
+
+.review__avatar_center {
+  object-position: center;
+}
+
+.review__caption {
+  font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 1.4;
+text-align: center;
+}
+
+.review__comment {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 52px;
+  width: 680px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+}
+

@@ -1,0 +1,19 @@
+.footer__container {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.footer__title {
+  padding-bottom: 54px;
+}
+
+.footer__address {
+  margin-bottom: 41px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+}
+
+
+
