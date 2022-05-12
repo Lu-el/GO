@@ -30,6 +30,10 @@
   width: 100%;
 }
 
+.choosing__input:focus {
+  outline: 2px solid #CD06FF;
+}
+
 .choosing__wrapper:not(:last-child) {
   margin-bottom: 14px;
 }

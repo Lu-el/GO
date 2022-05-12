@@ -58,6 +58,21 @@
   color: #000000;
 }
 
+.booking__label:hover {
+  background-color: #EADEED;
+  outline: 3px solid #640AA3;
+}
+
+.booking__label:active {
+  outline: none;
+  background-color: #EADEED;
+}
+
+.booking__radio:focus + .booking__label {
+  background-color: #ffffff;
+  outline: 3px solid #640AA3;
+}
+
 .booking__btn {
   min-width: 300px;
   padding: 16px 0;
@@ -72,7 +87,17 @@
   border-radius: 10px;
 }
 
-.booking__radio:checked + .booking__label {
-  color: #FFFFFF;
-  background-color: #440F51;
+.booking__btn:hover {
+  background-color: #EADEED;
+  outline: 3px solid #6C0287;
+}
+
+.booking__btn:active {
+  background-color: #EADEED;
+  outline: none;
+}
+
+.booking__btn:focus {
+  background-color: #ffffff;
+  outline: 3px solid #6C0287;
 }
