@@ -1,6 +1,14 @@
-@import './information.css';
+@import './normalize.css';
 @import './global.css';
+@import './information.css';
 @import './header.css';
+@import './navigator.css';
+@import './hero.css';
+@import './description-card.css';
+@import './funs.css';
+@import './booking.css';
+@import './collecting.css';
+@import './choosing.css';
 @import './lounge.css';
 @import './information.css';
 @import './footer.css';

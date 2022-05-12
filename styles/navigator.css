@@ -1,0 +1,14 @@
+.navigator__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.navigator__item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 50px;
+  text-transform: uppercase;
+}

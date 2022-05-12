@@ -1,16 +1,20 @@
+.lounge {
+  padding-bottom: 100px;
+}
+
 .lounge__title {
   padding-bottom: 60px;
 }
 
 .lounge__list {
   font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .lounge__item {
   position: relative;
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 20px;
   width: 580px;
   height: auto;
   font-style: normal;
@@ -27,18 +31,12 @@
   text-align: center;
 }
 
-.lounge__item:nth-child(2n+1) {
-  margin-right: 20px;
-}
-
-.lounge__item:nth-last-child(-n+2) {
-  margin-bottom: 0;
-}
-
 .lounge__caption {
-  margin-top: -40%;
-  max-width: 100%;
+  margin-top: -45%;
+  max-width: 252px;
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 

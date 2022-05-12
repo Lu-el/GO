@@ -1,2 +1,7 @@
 /.vscode
 /node_modules/
+/.gitignore
+/.editorconfig
+/LICENSE
+/browserconfig.xml
+/site.webmanifest

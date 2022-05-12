@@ -1,0 +1,45 @@
+.choosing__legend {
+  margin-bottom: 38px;
+}
+
+.choosing__fields {
+  display: flex;
+  align-items: flex-end;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.choosing__block {
+  display: flex;
+  flex-direction: column;
+  flex: 2 0 300px;
+}
+
+.choosing__block_width_narrow {
+  flex: 1 1 auto;
+}
+
+.choosing__fieldset {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 36px;
+}
+
+.choosing__input {
+  padding: 12px 20px;
+  width: 100%;
+}
+
+.choosing__wrapper:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.choosing__label {
+  display: block;
+  margin-bottom: 6px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+

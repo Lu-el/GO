@@ -1,6 +1,9 @@
+.footer {
+  background-image: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+}
+
 .footer__container {
   padding-top: 50px;
-  padding-bottom: 100px;
 }
 
 .footer__title {
@@ -15,5 +18,22 @@
   line-height: 1.17;
 }
 
+.footer__block {
+  display: flex;
+  justify-content: space-between;
+}
 
+.footer__block:not(:last-child) {
+  margin-bottom: 166px;
+}
 
+.footer__img {
+  max-width: 100%;
+}
+
+.footer__copy {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}

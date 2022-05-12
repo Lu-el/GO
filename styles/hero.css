@@ -1,0 +1,75 @@
+.hero__container {
+  position: relative;
+  width: 100%;
+  height: 823px;
+}
+
+.hero__container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-image: url('../image/hero/title-man.png');
+  background-repeat: no-repeat;
+  background-position: bottom right 30px;
+}
+
+.hero__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 1;
+  letter-spacing: -0.1em;
+}
+
+.hero__subtitle {
+  padding-left: 100px;
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 50px;
+}
+
+.hero__btn {
+  position: relative;
+  display: inline-block;
+  padding: 25px 69px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: #6C0287;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.hero__down {
+  position: absolute;
+  bottom: 90px;
+  left: 45%;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  width: 97px;
+  height: 97px;
+  border-radius: 50%/50%;
+  border: #ffffff 1px solid;
+  cursor: pointer;
+}
+
+.hero__down::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 40px;
+  width: 20.02px;
+  height: 20.02px;
+  transform: rotate(-45deg);
+  border-left: #ffffff 1px solid;
+  border-bottom: #ffffff 1px solid;
+}

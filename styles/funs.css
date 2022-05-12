@@ -1,0 +1,56 @@
+.funs__title {
+  max-width: 715px;
+  margin: 0 auto;
+  margin-bottom: 41px;
+}
+
+.funs__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
+.funs__item {
+  padding: 166px 40px 0 40px;
+  flex: 1 0 380px;
+  height: 228px;
+}
+
+.funs__caption {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.funs__item::before {
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.funs__item_vr {
+  background-image: url('../image/funs/vr.jpg');
+}
+
+.funs__item_audio {
+  background-image: url('../image/funs/audio.jpg');
+}
+
+.funs__item_karaoke {
+  background-image: url('../image/funs/karaoke.jpg');
+}
+
+.funs__item_boardgames {
+  background-image: url('../image/funs/boardgames.jpg');
+}
+
+.funs__item_cinema {
+  background-image: url('../image/funs/cinema.jpg');
+}
+
+.funs__item_ps5 {
+  background-image: url('../image/funs/ps5.jpg');
+}
