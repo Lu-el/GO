@@ -39,7 +39,23 @@
   background-image: url('../image/question/open-violet.svg');
 }
 
+.question__item:hover:nth-child(odd):after {
+  background-image: url('../image/question/open-violet_hover.svg');
+}
+
 .question__item:nth-child(even):after {
   background-image: url('../image/question/open-white.svg');
+}
+
+.question__item:hover:nth-child(even):after {
+  background-image: url('../image/question/open-white_hover.svg');
+}
+
+.question__item:active:nth-child(odd):after {
+  background-image: url('../image/question/close-violet_active.svg');
+}
+
+.question__item:active:nth-child(even):after {
+  background-image: url('../image/question/close-white_active.svg');
 }
 

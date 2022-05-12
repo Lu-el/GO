@@ -5,30 +5,26 @@
 
 .socilal-nav__link {
   margin-right: 28px;
+  font-size: 0;
 }
 
-.socilal-nav__link::before {
-  content: '';
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+.socilal-nav__link:focus {
+  color: #EADEED;
+  outline: 1px solid #CD06FF;
 }
 
-.socilal-nav__link_instg::before {
-  background-image: url('../image/social-nav/instagram.svg');
+.socilal-nav__link:active {
+  outline: none;
 }
 
-.socilal-nav__link_vk::before {
-  background-image: url('../image/social-nav/vk.svg');
+.socilal-nav__svg {
+  color: #ffffff;
 }
 
-.socilal-nav__link_fb::before {
-  background-image: url('../image/social-nav/facebook.svg');
+.socilal-nav__svg:hover {
+  color: #EADEED;
 }
 
-.socilal-nav__link_tg::before {
-  background-image: url('../image/social-nav/telegram.svg');
+.socilal-nav__svg:active {
+  color: #CD06FF;
 }

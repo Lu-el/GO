@@ -28,5 +28,9 @@
 }
 
 .collecting__input {
- margin-right: 12px;
+  margin-right: 12px;
+}
+
+.collecting__input:focus {
+  outline: 1px solid #CD06FF;
 }
