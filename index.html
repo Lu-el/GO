@@ -493,7 +493,13 @@
 
     </footer>
   </div>
-
+  <script>
+    document.addEventListener('click', event => {
+      if (event.target.matches('button')) {
+        event.target.focus()
+      }
+    })
+  </script>
 </body>
 
 </html>
