@@ -46,6 +46,7 @@
   border-radius: 10px;
   cursor: pointer;
   z-index: 100;
+  transition: background-color 0.3s ease-in;
 }
 
 .hero__btn:hover,
@@ -73,6 +74,7 @@
   border-radius: 50%/50%;
   border: #ffffff 1px solid;
   cursor: pointer;
+  transition: background-color 0.5s ease-out;
 }
 
 .hero__down::after {
@@ -85,6 +87,7 @@
   transform: rotate(-45deg);
   border-left: #ffffff 1px solid;
   border-bottom: #ffffff 1px solid;
+  transition: border-color 0.5s ease-out;
 }
 
 .hero__down:hover {

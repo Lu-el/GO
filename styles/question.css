@@ -33,6 +33,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 46px;
+  transition: background-image 0.3s linear;
 }
 
 .question__item:nth-child(odd):after {

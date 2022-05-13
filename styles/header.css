@@ -23,13 +23,13 @@
   line-height: 30px;
   text-transform: uppercase;
   text-align: center;
+  transition: background-color 0.3s linear, border 0.3s linear;
 }
 
 .header__btn:hover,
 .header__btn:focus {
   background-color: #6C0287;
   border: 3px solid #6C0287;
-  color: #FFFFFF;
 }
 
 .header__btn:focus {
@@ -39,5 +39,4 @@
 .header__btn:active {
   background-color: #640AA3;
   border: 3px solid #640AA3;
-  color: #FFFFFF;
 }

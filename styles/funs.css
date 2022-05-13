@@ -14,6 +14,11 @@
   padding: 166px 40px 0 40px;
   flex: 1 0 380px;
   height: 228px;
+  transition: transform 0.3s ease-out;
+}
+
+.funs__item:hover {
+  transform: scale(1.1);
 }
 
 .funs__caption {
