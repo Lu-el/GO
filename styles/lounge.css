@@ -23,6 +23,15 @@
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
+  transition: transform 0.3s ease-out;
+}
+
+.lounge__item:hover {
+  z-index: 100;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -moz-transform: scale(1.1);
 }
 
 .lounge__figure {
