@@ -19,6 +19,9 @@
 
 .funs__item:hover {
   transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -moz-transform: scale(1.1);
 }
 
 .funs__caption {
@@ -28,12 +31,10 @@
   line-height: 28px;
 }
 
-.funs__item::before {
-  content: '';
-  display: block;
+.funs__item {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .funs__item_vr {
