@@ -7,6 +7,8 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  cursor: pointer;
+  user-select: none;
 }
 
 .question__item:not(:last-child) {

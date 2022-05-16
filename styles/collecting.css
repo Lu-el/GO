@@ -24,13 +24,33 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 25px;
+  cursor: pointer;
+  user-select: none;
 }
 
-.collecting__input {
+.collecting__icon {
   margin-right: 12px;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%/50%;
+  background-color: #ffffff;
   transition: outline 0.3s ease-out;
 }
 
-.collecting__input:focus {
-  outline: 1px solid #CD06FF;
+.collecting__icon_rect {
+  width: 25px;
+  height: 25px;
+  border-radius: 0;
 }
+
+.collecting__input:focus + .collecting__icon {
+  outline: 1px solid #CD06FF;
+  outline-offset: 2px;
+}
+
+.collecting__input:checked + .collecting__icon {
+  outline: 8px solid #CD06FF;
+  outline-offset: -8px;
+}
+
+

@@ -56,6 +56,8 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  cursor: pointer;
+  user-select: none;
   transition: background-color 0.3s linear;
 }
 
@@ -74,6 +76,11 @@
   outline: 3px solid #640AA3;
 }
 
+.booking__radio:checked + .booking__label {
+  background-color: #EADEED;
+  outline: none;
+}
+
 .booking__btn {
   min-width: 300px;
   padding: 16px 0;
@@ -83,6 +90,7 @@
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
+  border: 0;
   color: #6C0287;
   background-color: #FFFFFF;
   border-radius: 10px;
@@ -97,6 +105,7 @@
 .booking__btn:active {
   background-color: #EADEED;
   outline: none;
+  border: 0;
 }
 
 .booking__btn:focus {

@@ -14,6 +14,8 @@
   padding: 166px 40px 0 40px;
   flex: 1 0 380px;
   height: 228px;
+  cursor: pointer;
+  user-select: none;
   transition: transform 0.3s ease-out;
 }
 
