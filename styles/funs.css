@@ -39,6 +39,18 @@
   background-size: cover;
 }
 
+.funs__item:nth-child(2) {
+  margin-top: 70px;
+}
+
+.funs__item:nth-child(3n+6) {
+  margin-top: -70px;
+}
+
+.funs__item:nth-child(3n+4) {
+  margin-top: -70px;
+}
+
 .funs__item_vr {
   background-image: url('../image/funs/vr.jpg');
 }

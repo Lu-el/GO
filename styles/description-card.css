@@ -17,7 +17,7 @@
   font-weight: 900;
   font-size: 100px;
   line-height: 1.41;
-  color: #CD06FF;
+  color: var(--secondary-color);
   text-align: center;
 }
 

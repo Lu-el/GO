@@ -72,7 +72,7 @@
   width: 97px;
   height: 97px;
   border-radius: 50%/50%;
-  border: #ffffff 1px solid;
+  border: var(--main-color) 1px solid;
   cursor: pointer;
   transition: background-color 0.5s ease-out;
 }
@@ -85,13 +85,13 @@
   width: 20.02px;
   height: 20.02px;
   transform: rotate(-45deg);
-  border-left: #ffffff 1px solid;
-  border-bottom: #ffffff 1px solid;
+  border-left: var(--main-color) 1px solid;
+  border-bottom: var(--main-color) 1px solid;
   transition: border-color 0.5s ease-out;
 }
 
 .hero__down:hover {
-  background-color: #ffffff;
+  background-color: var(--main-color);
 }
 
 .hero__down:hover::after {
@@ -99,12 +99,12 @@
 }
 
 .hero__down:active {
-  background-color: #CD06FF;
-  border-color: #CD06FF;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
 }
 
 .hero__down:active::after {
-  border-color: #ffffff;
+  border-color: var(--main-color);
 }
 
 .hero__down:focus {
@@ -121,6 +121,6 @@
   z-index: 10;
   width: 99px;
   height: 99px;
-  border: 1px solid #CD06FF;
+  border: 1px solid var(--secondary-color);
   cursor: pointer;
 }

@@ -11,7 +11,7 @@
 
 .socilal-nav__link:focus {
   color: #EADEED;
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--secondary-color);
 }
 
 .socilal-nav__link:active {
@@ -19,7 +19,7 @@
 }
 
 .socilal-nav__svg {
-  color: #ffffff;
+  color: var(--main-color);
   transition: color 0.5s ease-out;
 }
 
@@ -28,5 +28,5 @@
 }
 
 .socilal-nav__svg:active {
-  color: #CD06FF;
+  color: var(--secondary-color);
 }
