@@ -7,28 +7,134 @@
 }
 
 .information__title {
-  padding-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .information__wrapper {
-  display: inline-block;
-  vertical-align: top;
   width: 100%;
+  display: grid;
+  grid-template: 222px 325px / repeat(auto-fill, minmax(500px, 600px));
+  grid-template-areas:
+    "gallery content-text"
+    "gallery quote";
+  gap: 48px 80px;
+}
+
+.information__img {
+  grid-area: gallery;
+}
+
+.information__content {
+  grid-area: content-text;
+}
+
+.information__quote {
+  grid-area: quote;
 }
 
 .information__text {
+  margin-bottom: 34px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.4;
 }
 
-.information__text:not(:nth-last-child(2)) {
-  margin-bottom: 26px;
+.information__text:last-child {
+  margin-bottom: 0;
 }
 
-.information__quote {
-  margin-top: 59px;
+@media (max-width: 1024px) {
+  .information__container {
+    max-width: 964px;
+  }
+
+  .information__title {
+    margin-bottom: 26px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .information__wrapper {
+    grid-template: repeat(auto-fill, minmax(127px, 1fr)) / repeat(auto-fill, minmax(420px, 444px));
+    grid-template-areas:
+      "gallery content-text"
+      "gallery quote";
+    gap: 26px 40px;
+  }
+
+  .information__text {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 22px;
+  }
 }
 
+@media (max-width: 800px) {
+  .information__container {
+    padding: 0 40px;
+  }
 
+  .information__title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .information__wrapper {
+    /* grid-template: 380px 184px / 382px 278px; */
+    grid-template: repeat(auto-fill, minmax(184px, 380px)) / repeat(auto-fill, minmax(278px, 382px));
+    grid-template-areas:
+      "gallery content-text"
+      "quote quote";
+    gap: 30px 28px;
+  }
+
+  .information__content {
+    align-self: center;
+  }
+
+  .information__img {
+    align-self: center;
+  }
+
+  .information__text {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+/* @media (max-width: 768px) {
+  .information__content {
+    align-self: start;
+  }
+} */
+
+@media (max-width: 640px) {
+  .information__container {
+    padding: 0 20px;
+  }
+
+  .information__title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .information__wrapper {
+    /* grid-template: 127px 278px 144px / 100%; */
+    grid-template: auto / 100%;
+    grid-template-areas:
+      "content-text"
+      "gallery"
+      "quote";
+    gap: 15px;
+  }
+
+  .information__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+}
