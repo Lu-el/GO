@@ -7,17 +7,17 @@
 }
 
 .information__title {
-  margin-bottom: 40px;
+  margin-bottom: 47px;
 }
 
 .information__wrapper {
   width: 100%;
   display: grid;
-  grid-template: 222px 325px / repeat(auto-fill, minmax(500px, 600px));
+  grid-template: 222px 325px / minmax(420px, 600px) minmax(444px, 500px);
   grid-template-areas:
     "gallery content-text"
     "gallery quote";
-  gap: 48px 80px;
+    gap: 58px 80px;
 }
 
 .information__img {
@@ -33,7 +33,7 @@
 }
 
 .information__text {
-  margin-bottom: 34px;
+  margin-bottom: 29px;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -45,6 +45,10 @@
 }
 
 @media (max-width: 1024px) {
+  .information {
+padding-top: 48px;
+  }
+
   .information__container {
     max-width: 964px;
   }
@@ -56,21 +60,31 @@
   }
 
   .information__wrapper {
-    grid-template: repeat(auto-fill, minmax(127px, 1fr)) / repeat(auto-fill, minmax(420px, 444px));
+    grid-template: 195px 217px / minmax(382px, 420px) minmax(278px, 444px);
     grid-template-areas:
       "gallery content-text"
       "gallery quote";
-    gap: 26px 40px;
+    gap: 37px 40px;
   }
 
   .information__text {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 960px) {
+  .information__wrap {
+    display: inline;
+  }
+}
+
+@media (max-width: 860px) {
+  .information {
+    padding-top: 51px;
+  }
+
   .information__container {
     padding: 0 40px;
   }
@@ -83,11 +97,11 @@
 
   .information__wrapper {
     /* grid-template: 380px 184px / 382px 278px; */
-    grid-template: repeat(auto-fill, minmax(184px, 380px)) / repeat(auto-fill, minmax(278px, 382px));
+    grid-template: repeat(auto-fill, minmax(184px, 380px)) / minmax(382px, 100%) minmax(278px, 100%);
     grid-template-areas:
       "gallery content-text"
       "quote quote";
-    gap: 30px 28px;
+      gap: 41px 28px;
   }
 
   .information__content {
@@ -98,8 +112,12 @@
     align-self: center;
   }
 
+  .information__wrap {
+    display: inline;
+  }
+
   .information__text {
-    margin-bottom: 15px;
+    margin-bottom: 22px;
     font-size: 16px;
     line-height: 22px;
   }
@@ -112,6 +130,10 @@
 } */
 
 @media (max-width: 640px) {
+  .information {
+    padding-top: 49px;
+  }
+
   .information__container {
     padding: 0 20px;
   }
@@ -129,12 +151,17 @@
       "content-text"
       "gallery"
       "quote";
-    gap: 15px;
+      gap: 14px;
   }
 
   .information__text {
+    margin-bottom: 16px;
     font-size: 12px;
     line-height: 16px;
+  }
+
+  .information__quote {
+    padding-top: 6px;
   }
 
 }
