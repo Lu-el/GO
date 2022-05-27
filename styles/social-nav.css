@@ -1,10 +1,15 @@
+.socilal-nav__list {
+  gap: 26px;
+  display: flex;
+}
+
 .socilal-nav__item {
-  display: inline-block;
-  vertical-align: middle;
+  flex: 0 0 50px;
+  font-size: 0;
 }
 
 .socilal-nav__link {
-  margin-right: 28px;
+  margin-right: 26px;
   font-size: 0;
   transition: color 0.3s ease-out;
 }
@@ -19,6 +24,7 @@
 }
 
 .socilal-nav__svg {
+  width: 100%;
   color: var(--main-color);
   transition: color 0.5s ease-out;
 }
@@ -30,3 +36,27 @@
 .socilal-nav__svg:active {
   color: var(--secondary-color);
 }
+
+@media (max-width: 1100px) {
+  .socilal-nav__item {
+    flex: 0 0 40px;
+  }
+}
+
+@media (max-width: 880px) {
+  .socilal-nav__list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .socilal-nav__item {
+    flex: 0 0 30px;
+  }
+
+  .socilal-nav__list {
+    gap: 20px;
+  }
+}
+
+

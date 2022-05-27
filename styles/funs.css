@@ -1,7 +1,8 @@
 .funs__title {
   max-width: 715px;
   margin: 0 auto;
-  margin-bottom: 41px;
+  margin-bottom: 43px;
+  padding-right: 7px;
 }
 
 .funs__list {
@@ -11,9 +12,12 @@
 }
 
 .funs__item {
-  padding: 166px 40px 0 40px;
-  flex: 1 0 380px;
+  padding: 0 40px;
+  flex: 1 0 calc(100% / 3 - 2 * 20px);
   height: 228px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   cursor: pointer;
   user-select: none;
   transition: transform 0.3s ease-out;
@@ -27,28 +31,24 @@
 }
 
 .funs__caption {
+  position: relative;
+  top: 73%;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
 }
 
-.funs__item {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 .funs__item:nth-child(2) {
-  margin-top: 70px;
+  margin-top: var(--funs-item-margin);
 }
 
 .funs__item:nth-child(3n+6) {
-  margin-top: -70px;
+  margin-top: calc(0px - var(--funs-item-margin));
 }
 
 .funs__item:nth-child(3n+4) {
-  margin-top: -70px;
+  margin-top: calc(0px - var(--funs-item-margin));
 }
 
 .funs__item_vr {
@@ -73,4 +73,93 @@
 
 .funs__item_ps5 {
   background-image: url('../image/funs/ps5.jpg');
+}
+
+@media (max-width: 1100px) {
+  .funs {
+    padding-top: 49px;
+  }
+
+  .funs__title {
+    max-width: 545px;
+    margin-bottom: 35px;
+  }
+
+  .funs__list {
+    gap: 29px 22px;
+  }
+
+  .funs__item {
+    padding: 0 20px;
+    flex: 1 0 230px;
+    max-height: 172px;
+  }
+
+  .funs__caption {
+    top: 66%;
+  }
+
+  .funs__caption_content_huge {
+    top: 49%;
+  }
+}
+
+@media (max-width: 880px) {
+  .funs__title {
+    max-width: 425px;
+    margin-bottom: 31px;
+  }
+
+  .funs__list {
+    gap: 20px;
+  }
+
+  .funs__item {
+    padding: 0 30px;
+    flex: 1 0 calc( 100% / 2 - 20px);
+    max-height: 200px;
+    padding: 0 30px;
+  }
+
+  .funs__caption_content_huge {
+    top: 66%;
+  }
+}
+
+@media (max-width: 750px) {
+  .funs__item {
+    padding: 0 10px;
+  }
+
+  .funs__caption {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+
+}
+
+@media (max-width: 540px) {
+  .funs {
+    padding-top: 31px;
+  }
+
+  .funs__title {
+    padding-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .funs__list {
+    gap: 10px;
+  }
+
+  .funs__item {
+    max-height: 75px;
+    padding: 0 15px 0 10px;
+  }
+
+  .funs__caption {
+    top: 40%;
+    font-size: 10px;
+    line-height: 14px;
+  }
 }

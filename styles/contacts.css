@@ -1,24 +1,167 @@
 .contacts__point {
-  padding-left: 60px;
+  display: flex;
+  align-items: center;
+  /* padding-left: 60px; */
   background-color: transparent;
-  background-position: left;
+  background-position: left center;
   background-size: 32px 32px;
   background-repeat: no-repeat;
 }
 
-.contacts__point_street {
-  background-image: url('../image/contacts/location.svg');
-  margin-bottom: 38px;
+.contacts__point::before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 28px;
+  background-position: left center;
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
 }
 
-.contacts__content_bottom {
-  margin-bottom: 11px;
+.contacts__point_street::before {
+  background-image: url('../image/contacts/location.svg');
+}
+
+.contacts__point_street {
+  margin-bottom: 42px;
 }
 
 .contacts__point_tel {
+  margin-bottom: 7px;
+}
+/* .contacts__content_bottom {
+  margin-bottom: 11px;
+} */
+
+.contacts__point_tel::before {
   background-image: url('../image/contacts/phone-call.svg');
 }
 
-.contacts__point_mail {
+.contacts__point_mail::before {
   background-image: url('../image/contacts/email.svg');
+  background-position: left 3px center;
+}
+
+@media (max-width: 1100px) {
+  .contacts__point {
+    background-size: 26px 26px;
+  }
+
+  .contacts__point::before {
+    content: '';
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-right: 14px;
+    background-size: 26px 26px;
+  }
+
+  .contacts__point_tel {
+    margin-bottom: 7px;
+  }
+
+  .contacts__point_street {
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: 880px) {
+  .contacts {
+    margin-right: 40px;
+  }
+
+  .contacts__point {
+    padding-left: 0px;
+    justify-content: center;
+  }
+
+  .contacts__point_street::before {
+    content: none;
+  }
+
+  .contacts__point_street {
+    /* background-position: left 100px top; */
+    margin-bottom: 32px;
+  }
+
+  .contacts__point_tel {
+    /* background-position: left 54px center; */
+    margin-bottom: 27px;
+  }
+/*
+  .contacts__content_bottom {
+    margin-bottom: 27px;
+  } */
+
+  /* .contacts__point_mail {
+    background-position: left 20px center;
+  } */
+
+.contact__icon_before {
+  margin-right: -2px;
+}
+
+  .contact__text_icon_before::before {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    width: 26px;
+    height: 26px;
+    margin-top: 3px;
+    margin-right: 14px;
+    background-position: left center;
+    background-size: 26px 26px;
+    background-repeat: no-repeat;
+    background-image: url('../image/contacts/location.svg');
+  }
+
+  .contact__text_margin_xl {
+    margin-right: -40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contacts {
+    margin-right: 28px;
+  }
+
+  .contacts__point {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .contacts__point::before,
+  .contact__text_icon_before::before {
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+    margin-right: 6px;
+  }
+
+  .contacts__point_street,
+  .contacts__point_tel {
+    margin-bottom: 8px;
+  }
+
+  .contact__text_icon_before::before {
+    margin-top: -4px;
+  }
+
+  .contact__text_margin_xl {
+    margin-right: -30px;
+  }
+/*
+  .contacts__point_street {
+    background-position: left 81px top -4px;
+  }
+
+  .contacts__point_tel {
+    background-position: left 59px center;
+  }
+
+  .contacts__point_mail {
+    background-position: left 37px center;
+  } */
+
 }

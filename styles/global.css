@@ -1,6 +1,7 @@
 html {
   position: relative;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -102,6 +103,55 @@ section {
   display: block;
 }
 
+.text-wrap {
+  display: block;
+}
+
 .block_margin_bottom {
   margin-bottom: 6px;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    padding: 0 60px;
+  }
+
+  section {
+    padding: 35px 0;
+  }
+
+  .page__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 880px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+
+  .page__title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  section {
+    padding: 15px 0;
+  }
+
+  .page__title {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }

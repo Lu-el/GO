@@ -4,3 +4,45 @@
   --dark-color: #440F51;
   --bcg-color: #1B1A1B;
 }
+
+.burger {
+  --main-color: #6C0287;
+  --hover-color: #CD06FF;
+  --active-color: #840AA3;
+}
+
+.hero {
+  --width-btn-down: 97px;
+}
+
+.funs {
+  --funs-item-margin: 70px;
+}
+
+.lounge {
+  --lounge-gap: 20px;
+}
+
+@media (max-width: 1100px) {
+  .hero {
+    --width-btn-down: 67px;
+  }
+
+  .funs {
+    --funs-item-margin: 53px;
+  }
+}
+
+@media (max-width: 880px) {
+  .funs {
+    --funs-item-margin: 0px;
+  }
+}
+
+@media (max-width: 540px) {
+  .lounge {
+    --lounge-gap: 10px;
+  }
+}
+
+

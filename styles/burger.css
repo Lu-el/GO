@@ -1,0 +1,32 @@
+.burger {
+  background-color: transparent;
+  border: 0;
+}
+
+.burger:focus {
+  outline: none;
+}
+
+.burger__open {
+  width: 100%;
+}
+
+.burger__elem {
+  fill: var(--main-color, #6C0287);
+  transition: fill 0.3s linear;
+}
+
+.burger__open:hover .burger__elem {
+  fill: var(--hover-color, #CD06FF);
+}
+
+.burger:focus .burger__elem,
+.burger:active .burger__elem {
+  fill: var(--active-color, #840AA3)
+}
+
+.burger:focus {
+  outline: 1px solid var(--hover-color, #CD06FF);
+  outline-offset: 1px;
+}
+
