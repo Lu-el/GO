@@ -138,8 +138,8 @@
   }
 
   .hero__container::after {
-    right: 26px;
-    background-size: 453px auto;
+    background-position: bottom right 57px;
+    background-size: 461px auto;
   }
 
   .hero__title {
@@ -177,7 +177,7 @@
   }
 
   .hero__container::after {
-    right: 2px;
+    background-position: bottom right 32px;
     background-size: 424px auto;
   }
 
@@ -217,7 +217,7 @@
   }
 
   .hero__container::after {
-    right: -10px;
+    background-position: bottom right 21px;
     background-size: 160px auto;
   }
 
