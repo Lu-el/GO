@@ -1,11 +1,11 @@
 .contacts__point {
   display: flex;
   align-items: center;
-  /* padding-left: 60px; */
   background-color: transparent;
   background-position: left center;
   background-size: 32px 32px;
   background-repeat: no-repeat;
+  transition: color .3s ease-out;
 }
 
 .contacts__point::before {
@@ -17,6 +17,10 @@
   background-position: left center;
   background-size: 32px 32px;
   background-repeat: no-repeat;
+}
+
+.contacts__point:hover {
+  color: #EADEED;
 }
 
 .contacts__point_street::before {
@@ -130,6 +134,8 @@
     font-size: 14px;
     line-height: 18px;
   }
+
+
 
   .contacts__point::before,
   .contact__text_icon_before::before {

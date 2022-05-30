@@ -16,7 +16,7 @@
 }
 
 .funs {
-  --funs-item-margin: 70px;
+  --funs-item-translateY: 70px;
 }
 
 .lounge {
@@ -29,13 +29,13 @@
   }
 
   .funs {
-    --funs-item-margin: 53px;
+    --funs-item-translateY: 53px;
   }
 }
 
 @media (max-width: 880px) {
   .funs {
-    --funs-item-margin: 0px;
+    --funs-item-translateY: 0px;
   }
 }
 
