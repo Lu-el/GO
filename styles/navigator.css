@@ -27,3 +27,29 @@
     line-height: 22px;
   }
 }
+
+@media (max-width: 880px) {
+  .navigator__list {
+    flex-direction: column;
+    gap: 39px;
+    padding-top: 78px;
+    padding-bottom: 59px;
+  }
+
+  .navigator__item {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navigator__list {
+    gap: 26px;
+    padding-top: 45px;
+    padding-bottom: 38px;
+  }
+
+  .navigator__item {
+    font-size: 14px;
+  }
+}

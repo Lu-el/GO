@@ -1,6 +1,7 @@
 .footer {
   background-image: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
   padding-bottom: 21px;
+  position: relative;
 }
 
 .footer__container {

@@ -15,6 +15,7 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="./styles/index.css">
+  <script type="module" src="./script.js/main.js"></script>
 </head>
 
 <body>
@@ -27,6 +28,10 @@
             <rect class="burger__elem" width="54" height="5" rx="2" fill="currentColor" />
             <rect class="burger__elem" y="12" width="54" height="5" rx="2" fill="currentColor" />
             <rect class="burger__elem" y="24" width="31" height="5" rx="2" fill="currentColor" />
+          </svg>
+          <svg class="burger__close visually-hidden" width="42" height="42" viewbox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect class="burger__elem" y="38.1838" width="54" height="5" rx="2" transform="rotate(-45 0 38.1838)" fill="currentColor"/>
+            <rect class="burger__elem" x="3.53564" width="54" height="5" rx="2" transform="rotate(45 3.53564 0)" fill="currentColor"/>
           </svg>
         </button>
         <picture class="header__logo">
@@ -52,9 +57,34 @@
             </li>
           </ul>
         </nav>
-        <button class="header__btn">Заказать звонок</button>
+        <div class="header__wrapper">
+          <button class="header__btn">Заказать звонок</button>
+        </div>
       </div>
     </header>
+
+    <div class="modal visually-hidden">
+      <button class="modal__btn-close">
+        <svg class="modal__svg" width="42" height="42" viewbox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect y="38.4407" width="54.3632" height="5.03363" rx="2" transform="rotate(-45 0 38.4407)" fill="white"/>
+          <rect x="3.55957" width="54.3632" height="5.03363" rx="2" transform="rotate(45 3.55957 0)" fill="white"/>
+          </svg>
+      </button>
+      <div class="modal__container">
+        <h2 class="modal__title">Заказать звонок</h2>
+        <form class="modal__form">
+          <div class="modal__wrapper">
+            <label for="name_phone" class="modal__label">Имя</label>
+            <input class="modal__input"  id="name_phone" name="name_phone" type="text">
+          </div>
+          <div class="modal__wrapper">
+            <label for="user_phone" class="modal__label">Телефон</label>
+            <input  class="modal__input" name="user_phone" type="text" id="user_phone">
+          </div>
+          <button class="modal__btn-call" type="button">Позвонить мне</button>
+        </form>
+      </div>
+    </div>
 
     <main class="main">
       <section class="hero">
@@ -464,7 +494,7 @@
 
                 <li class="socilal-nav__item">
                   <a class="socilal-nav__link socilal-nav__link_instg" href="https://www.instagram.com" target="_blank">
-                    <svg class="socilal-nav__svg" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                    <svg class="socilal-nav__svg" width="50" height="50" viewbox="0 0 50 50" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_1355_5)">
                         <path
@@ -486,7 +516,7 @@
 
                 <li class="socilal-nav__item">
                   <a class="socilal-nav__link socilal-nav__link_fb" href="https://www.pinterest.ru/" target="_blank">
-                    <svg class="socilal-nav__svg" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                    <svg class="socilal-nav__svg" width="50" height="50" viewbox="0 0 50 50" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_1355_8)">
                         <path
@@ -507,7 +537,7 @@
                 </li>
                 <li class="socilal-nav__item">
                   <a class="socilal-nav__link socilal-nav__link_tg" href="https://www.stumbleupon.com/" target="_blank">
-                    <svg class="socilal-nav__svg" width="50" height="50" viewBox="0 0 50 50" fill="none"
+                    <svg class="socilal-nav__svg" width="50" height="50" viewbox="0 0 50 50" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_1355_10)">
                         <path fill-rule="evenodd" clip-rule="evenodd"

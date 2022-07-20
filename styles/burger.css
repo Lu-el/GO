@@ -7,7 +7,8 @@
   outline: none;
 }
 
-.burger__open {
+.burger__open,
+.burger__close {
   width: 100%;
 }
 
@@ -16,7 +17,8 @@
   transition: fill 0.3s linear;
 }
 
-.burger__open:hover .burger__elem {
+.burger__open:hover .burger__elem,
+.burger__close:hover .burger__elem {
   fill: var(--hover-color, #CD06FF);
 }
 
