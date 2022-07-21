@@ -1,5 +1,5 @@
 .modal {
-  position: fixed;
+  position: absolute;
   top: 145px;
   max-width: 600px;
   background-color: var(--dark-color);
@@ -72,7 +72,6 @@
 
 @media (max-width: 600px) {
   .modal {
-    position: fixed;
     top: 20px;
     max-width: 280px;
   }

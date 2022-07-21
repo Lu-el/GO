@@ -31,25 +31,48 @@
 @media (max-width: 880px) {
   .navigator__list {
     flex-direction: column;
-    gap: 39px;
-    padding-top: 78px;
-    padding-bottom: 59px;
+    gap: 0;
+    padding-top: 58px;
+    padding-bottom: 39px;
   }
 
   .navigator__item {
+    width: 100%;
+    text-align: center;
     font-size: 22px;
     line-height: 22px;
+
+  }
+
+  .navigator__link {
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 19px;
+  }
+
+  .navigator__link:hover {
+    background-color: #6C0287;
+  }
+
+  .navigator__link:active,
+  .navigator__link:focus {
+    background-color: var(--secondary-color);
   }
 }
 
 @media (max-width: 600px) {
   .navigator__list {
-    gap: 26px;
-    padding-top: 45px;
-    padding-bottom: 38px;
+    padding-top: 32px;
+    padding-bottom: 25px;
   }
 
   .navigator__item {
     font-size: 14px;
+  }
+
+  .navigator__link {
+    padding-top: 13px;
+    padding-bottom: 13px;
   }
 }

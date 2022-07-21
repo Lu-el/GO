@@ -72,7 +72,6 @@
   .header__burger {
     display: block;
     max-width: 54px;
-    padding-top: 10px;
   }
 
   .header__navigator {
@@ -108,8 +107,8 @@
   }
 
   .header__burger {
+    max-height: 42px;
     max-width: 39px;
-    padding-top:10px;
   }
 
   .header__navigator {
