@@ -59,12 +59,14 @@
 }
 
 .question__item:active:nth-child(odd):after,
-.question__item_active:nth-child(odd):after {
+.question__item_active:nth-child(odd):after,
+.question__item_active:hover:nth-child(odd):after {
   background-image: url('../image/question/close-violet_active.svg');
 }
 
 .question__item:active:nth-child(even):after,
-.question__item_active:nth-child(even):after {
+.question__item_active:nth-child(even):after,
+.question__item_active:hover:nth-child(even):after {
   background-image: url('../image/question/close-white_active.svg');
 }
 
@@ -123,7 +125,9 @@
 
   .question__item:active:nth-child(even):after,
   .question__item_active:nth-child(even):after,
-  .question__item_active:nth-child(odd):after {
+  .question__item_active:nth-child(odd):after,
+  .question__item_active:hover:nth-child(even):after,
+  .question__item_active:hover:nth-child(odd):after {
     background-image: url('../image/question/close-violet_active.svg');
   }
 

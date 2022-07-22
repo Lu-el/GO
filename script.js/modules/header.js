@@ -44,7 +44,7 @@ document.addEventListener('click', (e) => {
     }
     return;
   }
-  if (!(e.target.closest('.modal')) ||
+  if (!(e.target.closest('.modal__box')) ||
     e.target.closest('.modal__btn-close')) {
     if (burgerOpen.classList.contains('visually-hidden')) {
       burgerOpen.classList.toggle('visually-hidden');
